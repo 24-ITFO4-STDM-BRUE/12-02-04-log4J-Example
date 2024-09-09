@@ -1,0 +1,9 @@
+2024-09-02 12:41:15.766 [main] INFO  Main - checking filepath
+2024-09-02 12:41:15.766 [main] INFO  Main - file:/C:/Users/WarmbrunnYannik/IdeaProjects/DBReaderITFO/out/production/DBReader/meineDB.db
+2024-09-02 12:41:15.766 [main] INFO  Main - check finished
+2024-09-02 12:41:15.781 [main] DEBUG Main - Establishing connection
+2024-09-02 12:41:16.031 [main] INFO  Main - check finished
+2024-09-02 12:41:16.031 [main] INFO  Main - Query: SELECT name FROM meineDaten schema WHERE type= 'table' AND name NOT LIKE 'sqlite %'
+2024-09-02 12:41:16.047 [main] FATAL Main - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: name)
+2024-09-02 12:41:16.047 [main] FATAL Main - Bad Query
+2024-09-02 12:41:16.047 [main] INFO  Main - opened successfully
