@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Ausgabe in eine Datei -->
+        <File name="FileLogger" fileName="logs/app.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <!-- Ausgabe in die Konsole -->
+        <Console name="ConsoleLogger" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger: Alle Logs ab INFO Level werden an beide Appender geschickt -->
+        <Root level="info">
+            <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="ConsoleLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>
